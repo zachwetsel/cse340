@@ -4,15 +4,10 @@
 *:after {
   box-sizing: border-box;
 }
-body {
-  background-image: url("../images/site/checkerboard.jpg");
-  background-size: 400px;
-}
+
 /******* Body ***************/
-#wrapper {
-  border: 5px solid lightskyblue;
-  background-color: white;
-  margin: 10px 50px;
+body {
+  width: 100vw;
 }
 h1 {
   padding-left: 10px;
@@ -32,7 +27,7 @@ header {
 }
 .siteName a {
   text-decoration: none;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: bold;
 }
 #tools {
@@ -46,22 +41,109 @@ header {
 
 }
 /******* Navigation ***************/
-nav {
-  text-align: center;
-  list-style-type: none;
+.navbar {
   background-color: black;
-  color: white;
-  margin: 10px;
-  padding-top: 1px;
-  padding-bottom: 1px;
 }
-nav ul li {
-  display: inline;
-  margin-right: 50px;
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
-nav ul li a {
-  color: white;
+.nav-list li {
+  flex-grow: 1;
+}
+
+.nav-list li a {
   text-decoration: none;
+  color: white;
+  padding: 10px;
+  display: block;
 }
 
-
+/******* Hero ***************/
+#hero {
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+}
+#hero img {
+  display: block;
+  margin: 0 auto;
+}
+#call-to-action {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+}
+#call-to-action p {
+  margin: 0;
+  color: black;
+  font-size: 1.5rem;
+}
+#call-to-action p:first-child {
+  font-weight: bold;
+}
+#call-to-action p:last-child {
+  margin-bottom: 10px;
+}
+#call-to-action a {
+  margin-top: 10px;
+}
+/******* Main ***************/
+main {
+  margin-left: 10px;
+}
+#col1 {
+  height: 400px;
+}
+#col2 {
+  height: 400px;
+}
+#upgrade-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.blue-container {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.blue-square {
+  width: 160px;
+  height: 80px;
+  background-color: lightblue;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+.blue-square img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+figcaption {
+color: black;
+text-align: center;
+}
+#col2 ul li {
+  font-size: 150%;
+  padding: 10px;
+}
