@@ -4,3 +4,64 @@
 *:after {
   box-sizing: border-box;
 }
+body {
+  background-image: url("../images/site/checkerboard.jpg");
+  background-size: 400px;
+}
+/******* Body ***************/
+#wrapper {
+  border: 5px solid lightskyblue;
+  background-color: white;
+  margin: 10px 50px;
+}
+h1 {
+  padding-left: 10px;
+}
+/******* Header ***************/
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.siteName {
+  grid-column: 1/2;
+  justify-self: left;
+  padding-left: 10px;
+  align-self: center;
+}
+.siteName a {
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: bold;
+}
+#tools {
+  grid-column: 2/3;
+  justify-self: right;
+  padding-right: 10px;
+  align-self: center;
+}
+#tools a {
+  text-decoration: none;
+
+}
+/******* Navigation ***************/
+nav {
+  text-align: center;
+  list-style-type: none;
+  background-color: black;
+  color: white;
+  margin: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+nav ul li {
+  display: inline;
+  margin-right: 50px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+
